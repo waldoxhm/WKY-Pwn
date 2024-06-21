@@ -32,6 +32,7 @@ echo -e "\n\n\033[36m _____  _____  _____
 | |    | |    | |     \\ V  V /| | | |
 |_|    |_|    |_|      \\_/\\_/ |_| |_|\033[0m
 \n\033[33mhttps://github.com/Mintneko/WKY-Pwn\033[0m\n" | sudo tee /dev/tty1
+echo -e "\033[92mModded naixue233 https://github.com/naixue233/WKY-Pwn\033[0m\n" | sudo tee /dev/tty1
 echo -e "\033[92mVersion $VERSION \033[0m" | sudo tee /dev/tty1
 sudo systemctl stop pppoe >/dev/null 2>&1 &
 if [ $VMUSB = true ] ; then
