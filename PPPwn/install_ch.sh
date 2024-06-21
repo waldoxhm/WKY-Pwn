@@ -128,7 +128,7 @@ read -p "$(printf '\r\n\r\n\033[36m是否要更改正在使用的PS4固件版本
 case $fwset in
 [Yy]* ) 
 while true; do
-read -p  "$(printf '\033[33m输入固件版本 [11.00 | 10.01 | 10.00 | 9.00]: \033[0m')" FWV
+read -p  "$(printf '\033[33m输入固件版本 [11.00 | 10.01 | 10.00 | 9.60 | 9.00]: \033[0m')" FWV
 case $FWV in
 "" ) 
  echo -e '\033[31m不 能 为 空 !\033[0m';;
