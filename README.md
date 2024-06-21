@@ -68,9 +68,11 @@ sudo apt update
 sudo apt install git unzip wget -y
 sudo rm -r WKY-Pwn-main main.zip WKY-Pwn
 wget https://mirror.ghproxy.com/https://github.com/naixue233/WKY-Pwn/archive/refs/heads/main.zip  && unzip main.zip
-sudo mkdir /boot/firmware/
+rm main.zip
 cd WKY-Pwn-main
 sudo cp -r PPPwn /boot/firmware/
+cd /root
+rm -r WKY-Pwn-main
 cd /boot/firmware/PPPwn
 sudo chmod 777 *
 sudo bash install_ch.sh
