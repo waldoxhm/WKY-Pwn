@@ -11,7 +11,7 @@ if [ -z $VMUSB ]; then VMUSB=false; fi
 if [ -z $PPDBG ]; then PPDBG=false; fi
 if [ -z $TIMEOUT ]; then TIMEOUT="1m"; fi
 WKYTYP=$(tr -d '\0' </proc/device-tree/model)
-if [[ WKYTYP == *"Xunlei OneCloud clone Modded naixue233"* ]] ;then
+if [[ WKYTYP == *"Xunlei OneCloud"* ]] ;then
 coproc read -t 15 && wait "$!" || true
 CPPBIN="pppwn11"
 VMUSB=false
